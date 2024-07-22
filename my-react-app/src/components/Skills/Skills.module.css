@@ -1,0 +1,60 @@
+.contain {
+    margin-top: 100px;
+    text-align: center;
+  }
+  
+  .skill {
+    text-align: center;
+  }
+  
+  .skillImg {
+    width: 87px;  
+    height: 70px; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .skillImg:hover {
+    transform: scale(1.2); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .first, .second, .third {
+    margin-top: 50px;
+    border: 1px dotted white;
+    padding: 20px;
+  }
+
+/* skilln bar */  /* skilln bar */
+.skill_container {
+  height: 60vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.progressbar{
+  height: 20px;
+  width: 80%;
+  border-radius: 10px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+.progressbar:hover{
+  transform: scale(1.04); 
+
+}
+
+
+.progress{
+  margin-top: 60px;
+  text-align: center;
+}
+
+.progress-bar {
+  height: 100%;
+  line-height: 20px;
+  color: #fff;
+  text-align: center;
+}
