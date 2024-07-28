@@ -1,10 +1,28 @@
 .container{
-    height: 100vh;
+    margin-top: 80px;
+    min-height: 100vh;
     width: 100%;
-    background-color: aqua;
+    gap: 20px
 }
-.contain{
-    height: 100vh;
-    width: 100vh;
-    background-color: rebeccapurple;
+.container img{
+    border: 1px solid white;
+}
+.cards{
+    background-color: rgb(27, 3, 27);
+    display: flex;
+    width: 100%;
+    height: 70px;
+    justify-content: space-around;
+    border: 1px solid white;
+}
+.cards button{
+    height: 30px;
+    margin: 15px;
+    padding: 8px 18px;
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
