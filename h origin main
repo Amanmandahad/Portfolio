@@ -1,0 +1,51 @@
+[33mcommit 377d544e8db5e72bbc1a9fe53735ff0ee5cb8de0[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: Amanmandahad <mandahadaman>
+Date:   Sun Jul 28 21:10:34 2024 +0530
+
+    Your descriptive commit message
+
+ my-react-app/.eslintrc.cjs => .eslintrc.cjs        |    0
+ my-react-app/.gitignore => .gitignore              |    0
+ my-react-app/README.md => README.md                |    0
+ my-react-app/index.html => index.html              |    0
+ my-react-app/package-lock.json                     | 4416 [31m--------------------[m
+ my-react-app/package.json                          |   30 [31m-[m
+ {my-react-app/public => public}/Home.img           |  Bin
+ {my-react-app/public => public}/vite.svg           |    0
+ {my-react-app/src => src}/App.css                  |    0
+ {my-react-app/src => src}/App.jsx                  |    0
+ {my-react-app/src => src}/assets/react.svg         |    0
+ {my-react-app/src => src}/components/Home/Home.jsx |    0
+ .../src => src}/components/Home/Home.module.css    |    0
+ .../src => src}/components/Images/Git.webp         |  Bin
+ .../src => src}/components/Images/Home.realimg.png |  Bin
+ .../components/Images/JavaScript-logo.png          |  Bin
+ .../components/Images/Sass-Logo-800x500.png        |  Bin
+ .../components/Images/Tailwind_CSS_Logo.svg.png    |  Bin
+ .../components/Images/bootstrap-logo-shadow.png    |  Bin
+ .../src => src}/components/Images/css.png          |  Bin
+ .../components/Images/first resume (3) (1) (1).pdf |  Bin
+ .../src => src}/components/Images/homeimg.jpg      |  Bin
+ .../components/Images/html5-badge-h-solo.png       |  Bin
+ .../src => src}/components/Images/logo (3).png     |  Bin
+ .../src => src}/components/Images/mui.png          |  Bin
+ .../src => src}/components/Images/newwwwwwwwww.jpg |  Bin
+ .../components/Images/portfolio.img.png            |  Bin
+ .../src => src}/components/Images/react js.svg     |    0
+ .../components/Images/realMySQL-Logo.png           |  Bin
+ .../src => src}/components/Images/realgithub.png   |  Bin
+ .../components/Images/redux-toolkit.jpg            |  Bin
+ .../src => src}/components/Skills/Skills.jsx       |    0
+ .../components/Skills/Skills.module.css            |    0
+ .../src => src}/components/contact/Contact.jsx     |    0
+ .../components/contact/Contact.module.css          |    0
+ .../components/header-footer/Footer.jsx            |    0
+ .../components/header-footer/Footer.module.css     |    0
+ .../components/header-footer/Header.jsx            |    0
+ .../components/header-footer/Header.module.css     |    0
+ .../src => src}/components/projects/Projects.jsx   |    0
+ .../components/projects/Projects.module.css        |    0
+ {my-react-app/src => src}/index.css                |    0
+ {my-react-app/src => src}/main.jsx                 |    0
+ my-react-app/vite.config.js => vite.config.js      |    0
+ 44 files changed, 4446 deletions(-)
