@@ -17,10 +17,10 @@ import { GiProgression } from "react-icons/gi";
 
 const Skills = () => {
   const progressBarData = [
-    { label: 'HTML', percentage: 85, bgColor: 'text-bg-warning' },
-    { label: 'CSS, Bootstrap, Sass', percentage: 75, bgColor: 'text-bg-primary' },
-    { label: 'JavaScript', percentage: 80, bgColor: 'text-bg-danger' },
-    { label: 'React JS ', percentage: 80, bgColor: 'text-bg-success' }
+    { label: 'HTML', percentage: 90, bgColor: 'text-bg-warning' },
+    { label: 'CSS, Bootstrap, Sass', percentage: 90, bgColor: 'text-bg-primary' },
+    { label: 'JavaScript', percentage: 85, bgColor: 'text-bg-danger' },
+    { label: 'React JS ', percentage: 85, bgColor: 'text-bg-success' }
   ];
 
   return (
