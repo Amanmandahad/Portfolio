@@ -72,7 +72,7 @@ const Projects = () => {
                     initial="rest"
                     whileHover="hover"
                   >
-                    <a href="" style={{ color: 'black' }}>Demo</a>
+                    <a href="https://portfolio-pearl-xi-51.vercel.app/" style={{ color: 'black' }}>Demo</a>
                   </motion.button>
                 </div>
               </div>
