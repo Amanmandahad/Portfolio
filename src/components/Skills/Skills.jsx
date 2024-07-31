@@ -20,7 +20,7 @@ const Skills = () => {
     { label: 'HTML', percentage: 100, bgColor: 'text-bg-warning' },
     { label: 'CSS, Bootstrap, Sass', percentage: 90, bgColor: 'text-bg-primary' },
     { label: 'JavaScript', percentage: 85, bgColor: 'text-bg-danger' },
-    { label: 'React JS ', percentage: 90, bgColor: 'text-bg-success' }
+    { label: 'React JS ', percentage: 95, bgColor: 'text-bg-success' }
   ];
 
   return (
