@@ -52,8 +52,8 @@ const Projects = () => {
         >
           <div className="row justify-content-around">
             <motion.div
-              className="col-md-4"
-              style={{ margin: "15px" }}
+              className="col-lg-4 col-md-5"
+              style={{ margin: "2px",marginTop: '25px' }}
               variants={fadeInUp}
             >
               <img src={portfolio} className='img-fluid' alt="Portfolio" />
@@ -79,8 +79,8 @@ const Projects = () => {
             </motion.div>
 
             <motion.div
-              className="col-md-4"
-              style={{ margin: "15px" }}
+              className="col-lg-4 col-md-5"
+              style={{ margin: "px",marginTop: '25px'}}
               variants={fadeInUp}
               transition={{ delay: 0.3 }}
             >
@@ -119,8 +119,8 @@ const Projects = () => {
         >
           <div className="row justify-content-around">
             <motion.div
-              className="col-md-5"
-              style={{ margin: "15px" }}
+              className=" col-lg-4 col-md-5"
+              style={{ margin: "2px", }}
               variants={fadeInUp}
               transition={{ delay: 0.6 }}
             >
