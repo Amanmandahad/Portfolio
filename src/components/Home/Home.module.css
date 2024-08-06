@@ -12,6 +12,7 @@
   max-width: 400px; 
 }
 
+
 .contain h1 {
   font-weight: bold;
   display: flex;
@@ -101,7 +102,7 @@ margin-top: 50px;
 
 .mission_content {
   height: 100%;
- border: 1px solid #ccc;
+box-shadow: 0px 0px 15px #4AE5CC;
   margin: 25px 0;
   position: relative;
   z-index: 99;
