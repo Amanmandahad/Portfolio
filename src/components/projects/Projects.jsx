@@ -1,10 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import styles from './Projects.module.css';
-import portfolio from '../Images/portfolio.img.png';
-import gemini from '../Images/gemini.pic.png';
+import portfolio from '../Images/Real.portfolio.png';
+import gemini from '../Images/real.gemini.png';
 import ecommer from '../Images/Ecommerce-pic.png';
-
+import estate from '../Images/Real.realestate.png'
 const Projects = () => {
   // Define animation variants with more effects
   const fadeInUp = {
@@ -109,8 +109,6 @@ const Projects = () => {
         </motion.div>
 
         <br />
-        <br />
-
         <motion.div
           className="container"
           variants={container}
@@ -119,21 +117,20 @@ const Projects = () => {
         >
           <div className="row justify-content-around">
             <motion.div
-              className=" col-lg-4 col-md-5"
-              style={{ margin: "2px", }}
+              className="col-lg-4 col-md-5"
+              style={{ margin: "2px",marginTop: '25px' }}
               variants={fadeInUp}
-              transition={{ delay: 0.6 }}
             >
-              <img src={ecommer} className='img-fluid' alt="Travel Website" />
+              <img src={ecommer} className='img-fluid' alt="Portfolio" />
               <div className={styles.cards}>
-                <div><h4>Travel Website</h4></div>
+                <div><h4>Travel website</h4></div>
                 <div className={styles.btn}>
                   <motion.button
                     variants={buttonHover}
                     initial="rest"
                     whileHover="hover"
                   >
-                    <a href="https://github.com/Amanmandahad/Travel-website" style={{ color: 'black' }}>Code</a>
+                    <a href="https://github.com/Amanmandahad/Travel-website" style={{ color: "black" }}>Code</a>
                   </motion.button>
                   <motion.button
                     variants={buttonHover}
@@ -145,8 +142,39 @@ const Projects = () => {
                 </div>
               </div>
             </motion.div>
+
+            <motion.div
+              className="col-lg-4 col-md-5"
+              style={{ margin: "px",marginTop: '25px'}}
+              variants={fadeInUp}
+              transition={{ delay: 0.3 }}
+            >
+              <img src={estate} className='img-fluid' alt="Google Gemini" />
+              <div className={styles.cards}>
+                <div><h4>Real estate</h4></div>
+                <div className={styles.btn}>
+                  <motion.button
+                    variants={buttonHover}
+                    initial="rest"
+                    whileHover="hover"
+                  >
+                    <a href="https://github.com/Amanmandahad/React-real-estate-project" style={{ color: 'black' }}>Code</a>
+                  </motion.button>
+                  <motion.button
+                    variants={buttonHover}
+                    initial="rest"
+                    whileHover="hover"
+                  >
+                    <a href="https://react-real-estate-project-xi.vercel.app/" style={{ color: 'black' }}>Demo</a>
+                  </motion.button>
+                </div>
+              </div>
+            </motion.div>
           </div>
         </motion.div>
+       
+
+        
       </div>
     </div>
   );
