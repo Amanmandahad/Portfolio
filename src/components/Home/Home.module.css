@@ -86,11 +86,9 @@ align-items: center;
 /* goals */
 .goal{
   margin-left: 30px;
-  margin-top: 90px;
+  margin-top: 30px;
 }
-.mission{
-margin-top: 50px;
-}
+
 
 .main{
   height: 100%;
