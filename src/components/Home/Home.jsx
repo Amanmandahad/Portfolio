@@ -88,7 +88,7 @@ const Home = () => {
       <div className={`col-md-6 text-center ${styles.mission_content}`}>
         <h1>User Experience (UX)</h1>
         <p>
-          My Goal is to Design and develop interfaces that are intuitive, easy to navigate, and accessible to all users, including those with disabilities. Ensuring a positive user experience (UX) is crucial for the success of any application or website. Accessible design also broadens the user base and complies with legal standards and Create designs that work well on various devices and screen sizes (mobile, tablet, desktop).
+          My Goal is to Design and Develop interfaces that are intuitive, easy to navigate, and accessible to all users, including those with disabilities. Ensuring a positive user experience (UX) is crucial for the success of any application or website. Accessible design also broadens the user base and complies with legal standards and Create designs that work well on various devices and screen sizes (mobile, tablet, desktop).
         </p>
       </div>
     </div>
