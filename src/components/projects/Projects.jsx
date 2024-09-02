@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import styles from './Projects.module.css';
 import portfolio from '../Images/Real.portfolio.png';
 import gemini from '../Images/real.gemini.png';
+import skillup from '../../assets/skillup.png'
 import ecommer from '../Images/Ecommerce-pic.png';
 import estate from '../Images/Real.realestate.png'
 const Projects = () => {
@@ -173,6 +174,70 @@ const Projects = () => {
           </div>
         </motion.div>
        
+       <br />
+       <motion.div
+          className="container"
+          variants={container}
+          initial="hidden"
+          animate="visible"
+        >
+          <div className="row justify-content-around">
+            {/* <motion.div
+              className="col-lg-4 col-md-5"
+              style={{ margin: "2px",marginTop: '25px' }}
+              variants={fadeInUp}
+            >
+              <img src={ecommer} className='img-fluid' alt="Portfolio" />
+              <div className={styles.cards}>
+                <div><h4>Travel website</h4></div>
+                <div className={styles.btn}>
+                  <motion.button
+                    variants={buttonHover}
+                    initial="rest"
+                    whileHover="hover"
+                  >
+                    <a href="https://github.com/Amanmandahad/Travel-website" style={{ color: "black" }}>Code</a>
+                  </motion.button>
+                  <motion.button
+                    variants={buttonHover}
+                    initial="rest"
+                    whileHover="hover"
+                  >
+                    <a href="https://travel-website-nine-iota.vercel.app/" style={{ color: 'black' }}>Demo</a>
+                  </motion.button>
+                </div>
+              </div>
+            </motion.div> */}
+
+            <motion.div
+              className="col-lg-4 col-md-5"
+              style={{ margin: "px",marginTop: '25px'}}
+              variants={fadeInUp}
+              transition={{ delay: 0.3 }}
+            >
+              <img src={skillup} className='img-fluid' alt="Google Gemini" />
+              <div className={styles.cards}>
+                <div><h4>Skill up</h4></div>
+                <div className={styles.btn}>
+                  <motion.button
+                    variants={buttonHover}
+                    initial="rest"
+                    whileHover="hover"
+                  >
+                    <a href="https://github.com/Amanmandahad/Skillup" style={{ color: 'black' }}>Code</a>
+                  </motion.button>
+                  <motion.button
+                    variants={buttonHover}
+                    initial="rest"
+                    whileHover="hover"
+                  >
+                    <a href="https://skilluphub.vercel.app/" style={{ color: 'black' }}>Demo</a>
+                  </motion.button>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+        </motion.div>
 
         
       </div>
