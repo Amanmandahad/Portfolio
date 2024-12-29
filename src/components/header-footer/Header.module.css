@@ -1,7 +1,7 @@
 
 .contain {
   height: 80px;
-  border-bottom: 2px solid rgb(67, 6, 67);
+  border-bottom: 2px solid #4AE5CC;
   width: 100%;
   display: flex;
   justify-content: space-around; 
@@ -12,7 +12,7 @@
   top: 0;
   left: 0;
   z-index: 1000;
-  background-color: rgb(29, 5, 29);
+  background-color: rgb(0, 0, 0);
 }
 
 .logo {
@@ -47,12 +47,13 @@
   display: flex;
 }
 
-.social a:hover{
+/* .social a:hover{
   transform: scale(1.10); 
-}
+} */
 .links a {
   color: white; 
   text-decoration: none;
+  transform: scale(1.10); 
 }
 
 .links a:hover {
