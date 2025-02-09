@@ -1,10 +1,14 @@
 .contain {
-  margin-top: 130px;
   padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: justify;
+  height: 100vh;
 }
 
 .contain img {
-  margin-top: 30px;
+
   border-radius: 50%; 
   transition: transform 0.3s ease, box-shadow 0.3s ease; 
   height: 100%;
@@ -90,7 +94,7 @@ align-items: center;
 }
 
 .goal h1{
-  margin: 30px 0px 30px 0px  ;
+  margin: 0px 0px 30px 60px  ;
 }
 .main{
   height: 100%;
@@ -103,9 +107,11 @@ align-items: center;
 .mission_content {
   height: 100%;
 box-shadow: 0px 0px 15px #4AE5CC;
-  margin: 25px 0;
+  margin: 30px 0;
+  border-radius: 15px;
   position: relative;
   z-index: 99;
+  text-align: justify !important;
   padding: 20px;
   transition: all 0.3s ease; 
 }
@@ -117,6 +123,7 @@ box-shadow: 0px 0px 15px #4AE5CC;
 }
 .mission_content h1{
   color: rgb(81, 162, 135);
+  text-align: center;
 }
 
 .mission_content:hover {
