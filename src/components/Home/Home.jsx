@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 import styles from './Home.module.css';
-import img from '../Images/Homemainlogo.jpeg';
+import img from '../Images/WhatsApp Image 2025-02-09 at 23.19.16.jpeg';
 import resume from '../Images/first resume (3) (1) (1).pdf';
 
 const Home = () => {
