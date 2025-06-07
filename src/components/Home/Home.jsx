@@ -2,13 +2,13 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 import styles from './Home.module.css';
-import img from '../Images/WhatsApp Image 2025-02-09 at 23.19.16.jpeg';
-import resume from '../Images/first resume (3) (1) (1).pdf';
+import img from '../Images/Homemainlogo.jpeg';
+import resume from '../../../public/New_resume.docx (4).pdf';
 
 const Home = () => {
   const navigate = useNavigate();
   const [index, setIndex] = useState(0);
-  const texts = ['A Web Developer', 'A React Developer', 'A Front End Developer'];
+  const texts = ['A Mern Stack Developer', 'A React Developer', 'A Front End Developer'];
   const colors = ['gold', '#33FF57', 'red'];
 
   useEffect(() => {
@@ -49,7 +49,9 @@ const Home = () => {
               {texts[index]}
             </motion.h1>
             <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 2 }}>
-              A passionate frontend developer dedicated to crafting exceptional web experiences. With a solid foundation in HTML, CSS, and JavaScript, I excel at building responsive, user-friendly interfaces that engage and captivate. My expertise spans modern frameworks like React allowing me to create dynamic and interactive web applications. I focus on blending design aesthetics with technical precision to deliver sites that are not only visually appealing but also optimized for performance and cross-browser compatibility. Whether you're looking to launch a new project or enhance an existing one.
+           A dedicated and results-driven Full-Stack MERN Developer with a passion for building robust, scalable, and user-centric web applications. Proficient in MongoDB, Express.js, React.js, and Node.js, I excel in both frontend and backend development—crafting seamless, high-performance digital experiences from concept to deployment.
+
+With a strong foundation in JavaScript (ES6+), I create dynamic, responsive UIs using React, while architecting secure and efficient RESTful APIs with Node.js and Express. I’m experienced in integrating databases like MongoDB, handling authentication, state management (Redux/Context API), and deploying applications using platforms like Vercel, Netlify, and Render.
             </motion.p>
             <motion.a href={resume} download="resume" whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
               <button><i className="bi bi-arrow-down-circle"></i>My Resume</button>
@@ -84,7 +86,7 @@ const Home = () => {
 
       <div className={styles.mission}>
   <div className="container">
-    <div className="row justify-content-center align-items-center">
+    <div className="row justify-content-center align-items-center p-2">
       <div className={`col-md-6 text-center ${styles.mission_content}`}>
         <h1>User Experience (UX)</h1>
         <p>

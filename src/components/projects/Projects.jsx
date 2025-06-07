@@ -1,11 +1,12 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import styles from './Projects.module.css';
-import portfolio from '../Images/Real.portfolio.png';
-import gemini from '../Images/real.gemini.png';
-import skillup from '../../assets/skillup.png'
-import ecommer from '../Images/Ecommerce-pic.png';
-import estate from '../Images/Real.realestate.png'
+import portfolio from '../Images/porfolio.png';
+import netflix from '../Images/netflix.png';
+import skillup from '../Images/skillup.png'
+import ecommer from '../Images/travel.png';
+import estate from '../Images/real estate.png'
+import tomato from '../Images/tomato.png'
 const Projects = () => {
   // Define animation variants with more effects
   const fadeInUp = {
@@ -85,23 +86,23 @@ const Projects = () => {
               variants={fadeInUp}
               transition={{ delay: 0.3 }}
             >
-              <img src={gemini} className='img-fluid' alt="Google Gemini" />
+              <img src={netflix} className='img-fluid' alt="Netflix" />
               <div className={styles.cards}>
-                <div><h4>Google Gemini</h4></div>
+                <div><h4>Netflix</h4></div>
                 <div className={styles.btn}>
                   <motion.button
                     variants={buttonHover}
                     initial="rest"
                     whileHover="hover"
                   >
-                    <a href="https://github.com/Amanmandahad/Google-gemini" style={{ color: 'black' }}>Code</a>
+                    <a href="https://github.com/Amanmandahad/Netflix" style={{ color: 'black' }}>Code</a>
                   </motion.button>
                   <motion.button
                     variants={buttonHover}
                     initial="rest"
                     whileHover="hover"
                   >
-                    <a href="https://google-gemini-nu-lilac.vercel.app/" style={{ color: 'black' }}>Demo</a>
+                    <a href="https://netflix-oho2.onrender.com/" style={{ color: 'black' }}>Demo</a>
                   </motion.button>
                 </div>
               </div>
@@ -150,7 +151,7 @@ const Projects = () => {
               variants={fadeInUp}
               transition={{ delay: 0.3 }}
             >
-              <img src={estate} className='img-fluid' alt="Google Gemini" />
+              <img src={estate} className='img-fluid' alt="Real estate" />
               <div className={styles.cards}>
                 <div><h4>Real estate</h4></div>
                 <div className={styles.btn}>
@@ -175,47 +176,19 @@ const Projects = () => {
         </motion.div>
        
        <br />
-       <motion.div
+         <motion.div
           className="container"
           variants={container}
           initial="hidden"
           animate="visible"
         >
           <div className="row justify-content-around">
-            {/* <motion.div
+            <motion.div
               className="col-lg-4 col-md-5"
               style={{ margin: "2px",marginTop: '25px' }}
               variants={fadeInUp}
             >
-              <img src={ecommer} className='img-fluid' alt="Portfolio" />
-              <div className={styles.cards}>
-                <div><h4>Travel website</h4></div>
-                <div className={styles.btn}>
-                  <motion.button
-                    variants={buttonHover}
-                    initial="rest"
-                    whileHover="hover"
-                  >
-                    <a href="https://github.com/Amanmandahad/Travel-website" style={{ color: "black" }}>Code</a>
-                  </motion.button>
-                  <motion.button
-                    variants={buttonHover}
-                    initial="rest"
-                    whileHover="hover"
-                  >
-                    <a href="https://travel-website-nine-iota.vercel.app/" style={{ color: 'black' }}>Demo</a>
-                  </motion.button>
-                </div>
-              </div>
-            </motion.div> */}
-
-            <motion.div
-              className="col-lg-4 col-md-5"
-              style={{ margin: "px",marginTop: '25px'}}
-              variants={fadeInUp}
-              transition={{ delay: 0.3 }}
-            >
-              <img src={skillup} className='img-fluid' alt="Google Gemini" />
+              <img src={skillup} className='img-fluid' alt="Skillup" />
               <div className={styles.cards}>
                 <div><h4>Skill up</h4></div>
                 <div className={styles.btn}>
@@ -224,7 +197,7 @@ const Projects = () => {
                     initial="rest"
                     whileHover="hover"
                   >
-                    <a href="https://github.com/Amanmandahad/Skillup" style={{ color: 'black' }}>Code</a>
+                    <a href="https://github.com/Amanmandahad/Skillup" style={{ color: "black" }}>Code</a>
                   </motion.button>
                   <motion.button
                     variants={buttonHover}
@@ -236,9 +209,36 @@ const Projects = () => {
                 </div>
               </div>
             </motion.div>
+
+            <motion.div
+              className="col-lg-4 col-md-5"
+              style={{ margin: "px",marginTop: '25px'}}
+              variants={fadeInUp}
+              transition={{ delay: 0.3 }}
+            >
+              <img src={tomato} className='img-fluid' alt="tomato" />
+              <div className={styles.cards}>
+                <div><h4>Tomato</h4></div>
+                <div className={styles.btn}>
+                  <motion.button
+                    variants={buttonHover}
+                    initial="rest"
+                    whileHover="hover"
+                  >
+                    <a href="https://github.com/Amanmandahad/Tomato" style={{ color: 'black' }}>Code</a>
+                  </motion.button>
+                  <motion.button
+                    variants={buttonHover}
+                    initial="rest"
+                    whileHover="hover"
+                  >
+                    <a href="https://tomato-seven-snowy.vercel.app/" style={{ color: 'black' }}>Demo</a>
+                  </motion.button>
+                </div>
+              </div>
+            </motion.div>
           </div>
         </motion.div>
-
         
       </div>
     </div>

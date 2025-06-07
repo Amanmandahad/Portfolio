@@ -1,150 +1,82 @@
-import React from 'react'; // Import useState
-import { motion } from 'framer-motion';
-import styles from './Skills.module.css'; // Make sure the path is correct
+import React from 'react';
+import styles from './Skills.module.css';
+
+// Import your skill icons
 import html from '../Images/html5-badge-h-solo.png';
-import css from '../Images/css.png';
+import cssLogo from '../Images/css.png';
 import js from '../Images/JavaScript-logo.png';
-import reactLogo from '../Images/react js.svg';
+import reactLogo from '../Images/React_js-removebg-preview.png';
 import bootstrap from '../Images/bootstrap-logo-shadow.png';
-import sass from '../Images/Sass-Logo-800x500.png';
-import tailwind from '../Images/Tailwind_CSS_Logo.svg.png';
-import git from '../Images/Git.webp';
+import nodejs from '../Images/node-js-symbol-ripa-doyoung.jpg';
+import mongodb from '../Images/Mongodb.png';
+import expressjs from '../Images/1_q6b32yNdlpyQjDZlAc1QEg.png';
+import nextjs from '../Images/nextjs-drupal.jpg';
+
+// Import your tool/library icons
 import mui from '../Images/mui.png';
-import redux from '../Images/newwwwwwwwww.jpg';
-import github from '../Images/realgithub.png';
-import mysql from '../Images/realMySQL-Logo.png';
-import { GiProgression } from "react-icons/gi";
+import tailwind from '../Images/Tailwind_CSS_Logo.svg.png';
+import sass from '../Images/Sass-Logo-800x500.png';
+import git from '../Images/Git.webp';
+import redux from '../Images/Redux-removebg-preview.png';
+
+const skillsArray = [
+  { name: 'HTML', img: html },
+  { name: 'CSS', img: cssLogo },
+  { name: 'JavaScript', img: js },
+  { name: 'ReactJS', img: reactLogo },
+  { name: 'Redux', img: redux },
+,
+  { name: 'NodeJS', img: nodejs },
+  { name: 'ExpressJS', img: expressjs },
+  { name: 'MongoDB', img: mongodb },
+  { name: 'NextJS', img: nextjs },
+];
+
+const toolsArray = [
+  { name: 'Material UI', img: mui },
+  { name: 'Tailwind CSS', img: tailwind },
+  { name: 'Sass', img: sass },
+  { name: 'Git', img: git },
+   { name: 'Bootstrap', img: bootstrap }
+];
 
 const Skills = () => {
-  const progressBarData = [
-    { label: 'HTML', percentage: 100, bgColor: 'text-bg-warning' },
-    { label: 'CSS, Bootstrap, Sass', percentage: 90, bgColor: 'text-bg-primary' },
-    { label: 'JavaScript', percentage: 85, bgColor: 'text-bg-danger' },
-    { label: 'React JS ', percentage: 95, bgColor: 'text-bg-success' }
-  ];
-
   return (
-    <>
-      <div className={styles.contain}>
-        <h1>Languages & Frameworks <i className="bi bi-tools" style={{ color: '' }}></i></h1>
+    <div className={styles.contain}>
+      {/* --- Languages & Frameworks Section --- */}
+      <h2>Languages &amp; Frameworks</h2>
+      <p>Here are some of the tools and technologies I work with:</p>
 
-        <div className={`${styles.first} container`}>
-          <div className="row align-items-center justify-content-evenly" style={{ gap: '40px' }}>
-            {[
-              { name: 'HTML', img: html },
-              { name: 'CSS', img: css },
-              { name: 'JavaScript', img: js },
-              { name: 'React JS', img: reactLogo },
-              { name: 'Bootstrap', img: bootstrap },
-            ].map((skill, index) => (
-              <div className="col-md-2 col-sm-12" key={index}>
-                <motion.div
-                  className={styles.skill}
-                  whileHover={{ scale: 1.1 }}
-                  whileTap={{ scale: 0.9 }}
-                >
-                  <h3>{skill.name}</h3>
-                  <motion.img
-                    src={skill.img}
-                    alt={`${skill.name} logo`}
-                    className={styles.skillImg}
-                    initial={{ opacity: 0, y: 50 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 1.5, delay: index * 0.1 }}
-                  />
-                </motion.div>
-              </div>
-            ))}
+      <div className={styles['skills-grid']}>
+        {skillsArray.map((skill, idx) => (
+          <div className={styles.skill} key={idx}>
+            <img
+              src={skill.img}
+              alt={`${skill.name} logo`}
+              className={styles.skillImg}
+            />
+            <h3>{skill.name}</h3>
           </div>
-        </div>
-
-        <div className={`${styles.second} container`}>
-          <div className="row align-items-center justify-content-between">
-            {[
-              { name: 'Material UI', img: mui },
-              { name: 'Tailwind CSS', img: tailwind },
-              { name: 'Sass', img: sass },
-              { name: 'Git', img: git },
-              { name: 'Redux', img: redux },
-            ].map((skill, index) => (
-              <div className="col-md-2 col-sm-12" key={index}>
-                <motion.div
-                  className={styles.skill}
-                  whileHover={{ scale: 1.1 }}
-                  whileTap={{ scale: 0.9 }}
-                >
-                  <h3>{skill.name}</h3>
-                  <motion.img
-                    src={skill.img}
-                    alt={`${skill.name} logo`}
-                    className={styles.skillImg}
-                    initial={{ opacity: 0, y: 50 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 1.5, delay: index * 0.1 }}
-                    style={skill.name === 'Github' ? { width: '130px', backgroundColor: 'white' } : {}}
-                  />
-                </motion.div>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        <div className={`${styles.third} container`}>
-          <div className="row align-items-center justify-content-between">
-            {[
-              { name: 'Github', img: github },
-              { name: 'MySQL', img: mysql },
-            ].map((skill, index) => (
-              <div className="col-md-6 col-sm-12" key={index}>
-                <motion.div
-                  className={styles.skill}
-                  whileHover={{ scale: 1.1 }}
-                  whileTap={{ scale: 0.9 }}
-                >
-                  <h3>{skill.name}</h3>
-                  <motion.img
-                    src={skill.img}
-                    alt={`${skill.name} logo`}
-                    className={styles.skillImg}
-                    initial={{ opacity: 0, y: 50 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 1.5, delay: index * 0.1 }}
-                    style={skill.name === 'Github' ? { width: '130px', backgroundColor: 'white' } : {}}
-                  />
-                </motion.div>
-              </div>
-            ))}
-          </div>
-        </div>
+        ))}
       </div>
 
-      {/* Skill Progress Bars */}
-      <div className={styles.progress}><h1>Progress bars <GiProgression style={{marginBottom:'15px'}} /></h1></div>
+      {/* --- Tools & Libraries Section --- */}
+      <h2 style={{ marginTop: '64px' }}>Tools &amp; Libraries</h2>
+      <p>These are additional libraries and tools I frequently use:</p>
 
-      <div className={styles.skill_container}>
-      <div className="container">
-        <div className="row">
-          {progressBarData.map((skill, index) => (
-            <div key={index} className="col-12 mb-4">
-              <h4>{skill.label}</h4>
-              <div className={`progress ${styles.progressbar}`} role="progressbar" aria-valuenow={skill.percentage} aria-valuemin="0" aria-valuemax="100">
-                <motion.div
-                  className={`progress-bar ${skill.bgColor}`}
-                  style={{ width: `${skill.percentage}%` }}
-                  initial={{ width: 0 }}
-                  animate={{ width: `${skill.percentage}%` }}
-                  transition={{ duration: 1 }}
-                >
-                  {skill.percentage}%
-                </motion.div>
-              </div>
-            </div>
-          ))}
-        </div>
+      <div className={styles['skills-grid']}>
+        {toolsArray.map((tool, idx) => (
+          <div className={styles.skill} key={idx}>
+            <img
+              src={tool.img}
+              alt={`${tool.name} logo`}
+              className={styles.skillImg}
+            />
+            <h3>{tool.name}</h3>
+          </div>
+        ))}
       </div>
     </div>
-
-    </>
   );
 };
 

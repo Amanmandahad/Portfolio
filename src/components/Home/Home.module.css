@@ -1,25 +1,24 @@
 .contain {
-  padding: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   text-align: justify;
-  height: 100vh;
-}
-
-.contain img {
-
-  border-radius: 50%; 
-  transition: transform 0.3s ease, box-shadow 0.3s ease; 
-  height: 100%;
   width: 100%;
-  max-width: 400px; 
+  min-height: 100vh;
+  margin: 40px 0;
 }
 
+/* Image inside .contain */
+.contain img {
+  border-radius: 50%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 600px;
+  height: auto; /* let height scale proportionally */
+}
 
+/* Heading and paragraph inside .contain */
 .contain h1 {
   font-weight: bold;
-  display: flex;
   line-height: 35px;
 }
 
@@ -29,6 +28,7 @@
   line-height: 28px;
 }
 
+/* Button styling */
 .contain button {
   background: linear-gradient(45deg, red, blue, purple);
   color: white;
@@ -43,15 +43,14 @@
   border-radius: 20px;
   position: relative;
   outline: none;
- margin-left: 20px;
+  margin-left: 20px;
 }
-.contain button i{
-margin-right: 6px;
-font-weight: bold ;
-font-size: 20px;
-align-items: center;
 
-
+.contain button i {
+  margin-right: 6px;
+  font-weight: bold;
+  font-size: 20px;
+  align-items: center;
 }
 
 .contain button::before {
@@ -78,66 +77,179 @@ align-items: center;
 .contain button:active {
   background: linear-gradient(45deg, purple, blue, red);
 }
+
+/* Animated text */
 @keyframes fade {
-  0% { opacity: 0; }
-  50% { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .animatedText {
   animation: fade 3s infinite;
 }
-/* goals */
-.goal{
+
+/* Goals section */
+.goal {
   margin-left: 30px;
   margin-top: 30px;
 }
 
-.goal h1{
-  margin: 0px 0px 30px 60px  ;
+.goal h1 {
+  margin: 0 0 30px 60px;
 }
-.main{
+
+/* Main (wrapper) */
+.main {
   height: 100%;
   width: 100%;
   position: relative;
 }
 
-
-
+/* Mission content styling */
 .mission_content {
   height: 100%;
-box-shadow: 0px 0px 15px #4AE5CC;
+  box-shadow: 0px 0px 15px #4AE5CC;
   margin: 30px 0;
   border-radius: 15px;
   position: relative;
   z-index: 99;
   text-align: justify !important;
   padding: 20px;
-  transition: all 0.3s ease; 
+  transition: all 0.3s ease;
 }
 
-
-
-.mission_content p{
+.mission_content p {
   color: rgb(168, 240, 216);
 }
-.mission_content h1{
+
+.mission_content h1 {
   color: rgb(81, 162, 135);
   text-align: center;
 }
 
 .mission_content:hover {
-  transform: scale(1.09); 
+  transform: scale(1.09);
 }
 
+/*  
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+Responsive (Tablet and Mobile)
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+*/
 
+/* Tablets (≤ 768px) */
+@media (max-width: 768px) {
+  .contain {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: auto; /* let it grow as needed */
+    padding: 20px;
+  }
 
+  .contain img {
+    width: 80%;      /* scale image to 80% of container */
+    max-width: 400px; /* never exceed 400px */
+    margin-bottom: 20px;
+  }
 
+  .contain h1 {
+    font-size: 24px;
+    line-height: 32px;
+  }
 
+  .contain p {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 15px;
+  }
 
+  .contain button {
+    margin-left: 0;   /* center button on mobile */
+    font-size: 16px;
+    padding: 6px 16px;
+  }
 
+  .contain button i {
+    font-size: 18px;
+  }
 
+  .goal {
+    margin-left: 0;
+    margin-top: 20px;
+    text-align: center;
+  }
 
+  .goal h1 {
+    margin: 0 0 20px 0;
+    font-size: 24px;
+  }
 
+  .mission_content {
+    width: 100%;
+    padding: 15px;
+    margin: 20px 0;
+  }
+}
 
+/* Mobile (≤ 576px) */
+@media (max-width: 576px) {
+  .contain {
+    padding: 10px;
+  }
 
+  .contain img {
+    width: 100%;       /* full width on very small screens */
+    max-width: none;
+    /* margin-bottom: 15px; */
+    margin-top: 45px;
+  }
+
+  .contain h1 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .contain p {
+    font-size: 15px;
+    line-height: 22px;
+    margin-top: 12px;
+  }
+
+  .contain button {
+    font-size: 14px;
+    padding: 5px 12px;
+  }
+
+  .contain button i {
+    font-size: 16px;
+  }
+
+  .goal {
+    margin-left: 0;
+    margin-top: 20px 30px;
+    padding: 0px 20px;
+  }
+
+  .goal h1 {
+    margin: 0 0 15px 0;
+    font-size: 20px;
+  }
+
+  .mission_content {
+    padding: 20px 20px;
+    margin: 15px 0;
+  }
+
+  .mission_content h1{
+    margin-bottom: 20px;
+    font-size: 2rem;
+  }
+}

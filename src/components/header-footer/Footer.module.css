@@ -1,25 +1,52 @@
-.contain{
-    border-top: 1px solid  rgb(81, 162, 135);
-    height: 100%;
-    width: 100%;
-    padding: 5px;
-    background-color: rgb(0, 0, 0);
+.contain {
+  border-top: 1px solid rgb(81, 162, 135);
+  width: 100%;
+  padding: 20px;
+  background-color: #000;
+  text-align: center;       /* center all content */
+  box-sizing: border-box;
+}
 
+.contain h2 {
+  color: #fff;
+  margin: 10px 0;
+  font-weight: bold;
+  font-size: 24px;          /* base size for desktop/tablet */
 }
-.contain h2{
-    color: white;
-    margin: 10px 0;
-    font-weight: bold;
-}
+
 .contain p {
-    font-size: 19px;
-    font-style: inherit;
+  color: #fff;
+  font-size: 18px;          /* base size for desktop/tablet */
+  margin: 8px 0;
 }
 
+.contain i {
+  font-size: 20px;          /* base size for desktop/tablet */
+  color: #fff;
+  margin: 0 8px;            /* space between icons */
+  vertical-align: middle;
+}
 
- .contain i{
-    font-size: 19px;
-    color: white;
- }
+/*────────────────────────────────────────────────────────────────────*/
+/* Mobile adjustments (≤ 576px)                                         */
+/*────────────────────────────────────────────────────────────────────*/
+@media (max-width: 576px) {
+  .contain {
+    padding: 15px 10px;
+  }
 
- 
+  .contain h2 {
+    font-size: 20px;        /* reduce heading size */
+    margin: 8px 0;
+  }
+
+  .contain p {
+    font-size: 16px;        /* reduce paragraph size */
+    margin: 6px 0;
+  }
+
+  .contain i {
+    font-size: 18px;        /* reduce icon size */
+    margin: 0 6px;
+  }
+}
