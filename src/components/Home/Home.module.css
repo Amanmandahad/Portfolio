@@ -5,7 +5,7 @@
   text-align: justify;
   width: 100%;
   min-height: 100vh;
-  margin: 40px 0;
+  margin: 40px 0 60px 0px;
 }
 
 /* Image inside .contain */
@@ -103,11 +103,14 @@
 
 .goal h1 {
   margin: 0 0 30px 60px;
+  color: #51a287;
+  font-weight: 900;
 }
 
 /* Main (wrapper) */
 .main {
   height: 100%;
+  padding: 30px 20px;
   width: 100%;
   position: relative;
 }
@@ -174,6 +177,7 @@ Responsive (Tablet and Mobile)
   .contain button {
     margin-left: 0;   /* center button on mobile */
     font-size: 16px;
+    margin: 0px 5px;
     padding: 6px 16px;
   }
 
@@ -189,7 +193,7 @@ Responsive (Tablet and Mobile)
 
   .goal h1 {
     margin: 0 0 20px 0;
-    font-size: 24px;
+    font-size: 30px;
   }
 
   .mission_content {
@@ -240,7 +244,7 @@ Responsive (Tablet and Mobile)
 
   .goal h1 {
     margin: 0 0 15px 0;
-    font-size: 20px;
+    font-size: 30px;
   }
 
   .mission_content {

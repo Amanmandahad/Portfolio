@@ -18,13 +18,14 @@
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
   text-align: center;
   box-sizing: border-box;
+  margin-top: 50px;
 }
 
 .contain h2 {
   color: var(--accent-start);
   margin-bottom: 8px;
-  font-size: 36px;
-  font-weight: 700;
+  font-size: 46px;
+  font-weight: 900;
   letter-spacing: 1px;
 }
 
@@ -227,7 +228,7 @@
     padding: 50px 20px;
   }
   .contain h2 {
-    font-size: 24px;
+    font-size: 30px;
   }
   .contain p {
     font-size: 16px;

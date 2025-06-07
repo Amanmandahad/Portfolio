@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import styles from './Contact.module.css';
-
+import emailjs from '@emailjs/browser';
 const Contact = () => {
+  const form = useRef();
   const [state, setState] = useState({
     name: '',
     email: '',
@@ -16,10 +17,29 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    const serviceid = "service_25pkvur"
+    const publickey = "t_3WE3kwWXcIS99ls"
+    const templateid = "service_25pkvur"
+
+
     if (!state.name || !state.email || !state.textarea) {
       alert('All fields are required');
     } else {
       alert('Form submitted successfully');
+      
+    emailjs
+      .sendForm(serviceid, templateid, form.current, {
+        publicKey: publickey,
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+  };
       setState({ name: '', email: '', textarea: '' });
     }
   };

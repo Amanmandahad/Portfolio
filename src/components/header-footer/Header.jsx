@@ -21,11 +21,20 @@ const Header = () => {
         </div>
         <div className={`${styles.links} ${isMenuOpen ? styles.showMenu : ''}`}>
           <ul>
-            <li><NavLink to="/">Home</NavLink></li>
-            <li><NavLink to="/skills">Skills</NavLink></li>
-            <li><NavLink to="/projects">Projects</NavLink></li>
-            <li><NavLink to="/contact">Contact</NavLink></li>
-          </ul>
+  <li>
+    <NavLink to="/" onClick={() => setIsMenuOpen(false)}>Home</NavLink>
+  </li>
+  <li>
+    <NavLink to="/skills" onClick={() => setIsMenuOpen(false)}>Skills</NavLink>
+  </li>
+  <li>
+    <NavLink to="/projects" onClick={() => setIsMenuOpen(false)}>Projects</NavLink>
+  </li>
+  <li>
+    <NavLink to="/contact" onClick={() => setIsMenuOpen(false)}>Contact</NavLink>
+  </li>
+</ul>
+
         </div>
      
         <button className={styles.toggleButton} onClick={toggleMenu}>
