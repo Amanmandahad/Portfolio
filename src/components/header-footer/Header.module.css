@@ -72,42 +72,36 @@
   cursor: pointer;
 }
 
-
 @media (max-width: 768px) {
   .links {
-      display: none; 
-      position: absolute;
-      cursor: pointer;
-      top: 80px;
-      left: 0;
-      width: 100%;
-      background-color: black;
-      flex-direction: column; 
-      align-items: center; 
-      padding: 1rem 0; 
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-  }
-  .links:hover{
-    color: royalblue;
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0; /* Reduced from 1rem to prevent large height */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
 
   .links.showMenu {
-      display: flex; 
+    display: flex;
   }
 
   .toggleButton {
-      display: block; 
+    display: block;
   }
 
   .links ul {
-      display: flex;
-      flex-direction: column; 
-      padding: 0;
-      margin: 0;
+    flex-direction: column;
+    gap: 15px; /* Add spacing between items */
+    padding: 0;
+    margin: 0;
   }
 
   .links li {
-      margin: 10px 0; 
+    margin: 0; /* Remove extra margin */
   }
 }
-
