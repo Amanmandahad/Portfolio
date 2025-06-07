@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 import styles from './Home.module.css';
 import img from '../Images/Homemainlogo.jpeg';
-import resume from '../../../public/New_resume.docx (4).pdf';
+import resume from '../../../public/New_resume.docx (3).pdf';
 
 const Home = () => {
   const navigate = useNavigate();
