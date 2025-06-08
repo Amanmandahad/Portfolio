@@ -17,7 +17,7 @@ const Footer = () => {
           <p><i className="bi bi-geo-alt-fill"> Malad(East),Mumbai-400097</i></p>
   </div>
   <div className="col-md-4" >
-        <h2>Social Media:-</h2>
+        <h2>Other Links:-</h2>
         <p><a href="https://github.com/Amanmandahad"><i className="bi bi-github"style={{color:'white'}} ></i> Github</a></p>
         <p><a href="https://www.instagram.com/amxnnnnn.___?igsh=MWUyOGNyNmZqdHBhcA=="><i className="bi bi-instagram" style={{color:'#C13584'}}></i> Instagram</a></p>
         <p><a href="https://www.linkedin.com/in/aman-mandahad"> <i className="bi bi-linkedin" style={{color:'royalblue'}}></i> LinkedIn</a></p>
