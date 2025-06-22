@@ -11,6 +11,10 @@ import nodejs from '../Images/node-js-symbol-ripa-doyoung.jpg';
 import mongodb from '../Images/Mongodb.png';
 import expressjs from '../Images/1_q6b32yNdlpyQjDZlAc1QEg.png';
 import nextjs from '../Images/nextjs-drupal.jpg';
+import Shopify from '../Images/Shopify-removebg-preview.png';
+import Wordpress from '../Images/WordPress-removebg-preview.png';
+import Typescript from '../Images/typescript-removebg-preview.png';
+
 
 // Import your tool/library icons
 import mui from '../Images/mui.png';
@@ -23,13 +27,16 @@ const skillsArray = [
   { name: 'HTML', img: html },
   { name: 'CSS', img: cssLogo },
   { name: 'JavaScript', img: js },
+  { name: 'TypeScript', img: Typescript },
   { name: 'ReactJS', img: reactLogo },
   { name: 'Redux', img: redux },
 ,
+  { name: 'Nextjs', img: nextjs },
   { name: 'NodeJS', img: nodejs },
   { name: 'ExpressJS', img: expressjs },
   { name: 'MongoDB', img: mongodb },
-  { name: 'NextJS', img: nextjs },
+  { name: 'Shopify', img: Shopify },
+  { name: 'WordPress', img: Wordpress },
 ];
 
 const toolsArray = [
